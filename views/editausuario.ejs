@@ -1,0 +1,28 @@
+<%-include('cabecalho.ejs')%>
+<form method="post">
+    <div class="form-floating mb-3">
+        <input type="text" class='form-control' name="_id" id="id" readonly value="<%=Usuario._id%>">
+        <label class="form-label" for="id">Id</label>
+    </div>
+    <div class="form-floating mb-3">
+        <input type="text" class='form-control' name="nome" id="nome" placeholder="Digite seu nome." value="<%=Usuario.nome%>">
+        <label class="form-label" for="nome">Nome:</label>
+    </div>
+    <div class="form-floating mb-3">
+        <input type="email" class='form-control' name="email" id="email" placeholder="Digite seu email." value="<%=Usuario.email%>">
+        <label class="form-label" for="email">Email:</label>
+    </div>
+    <div class="form-floating mb-3">
+        <input type="password" class='form-control' name="senha" id="senha" placeholder="Digite sua senha." value="<%=Usuario.senha%>">
+        <label class="form-label" for="senha">Senha:</label>
+    </div>
+    <div class="form-floating mb-3">
+        <input type="date" class='form-control' name="datanasc" id="datanasc" value="<%=Usuario.datanasc%>">
+        <label class="form-label" for="datanasc">Data de Nascimento</label>
+    </div>
+    <div class="mb-3">
+        <input type="submit" class="btn btn-primary mb-3" value="Enviar">
+        
+    </div>
+</form>
+<%-include('rodape.ejs')%>
